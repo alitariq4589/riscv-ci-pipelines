@@ -69,6 +69,8 @@ node('pioneer-1-admin') {
     stage('make') {
         sh '''#!/bin/bash -l
             set -x
+        gcc --version
+        g++ --version
           cd node
           make -j32
         '''
